@@ -4,10 +4,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="jmx-console-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmx-console/jmx-console">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="java-output-path" value="/springProjectSkeleton/target/classes"/>
-        <property name="context-root" value="MySpringApp"/>
+        <property name="context-root" value="/"/>
     </wb-module>
 </project-modules>
