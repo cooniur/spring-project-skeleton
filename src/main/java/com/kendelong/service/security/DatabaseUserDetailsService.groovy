@@ -54,7 +54,7 @@ public class DatabaseUserDetailsService implements UserDetailsService
 			throw new UsernameNotFoundException("No user found for [$username]");
 		}
 		
-		def authorities = [new SimpleGrantedAuthority('ROLE_USER')]
+		def authorities = [new SimpleGrantedAuthority('ROLE_MEMBER')]
 		if(user.email.endsWith('mydomain.com')) authorities << new SimpleGrantedAuthority('ROLE_ADMIN')
 		UserDetails userDetails = new org.springframework.security.core.userdetails.User(user.getId().toString(), user.getPassword(), authorities );
 		return userDetails;

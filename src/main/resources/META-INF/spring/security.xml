@@ -20,7 +20,7 @@
 	</http>
 	
 	<beans:bean id="rememberMeServices" class="com.kendelong.service.security.HeaderBasedTokenRememberMeServices">
-		<beans:constructor-arg value="thisismysecretencryptionkey" />
+		<beans:constructor-arg value="mysecretkey" />
 		<beans:constructor-arg ref="userDetailsService"/>
 		<beans:property name="headerName" value="X-MySpringApp-Auth"/>
 		<beans:property name="tokenValiditySeconds" value="157680000"/>
